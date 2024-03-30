@@ -37,6 +37,37 @@ class MainActivity : AppCompatActivity() {
 
         println(zeynep.yas)
 
+        //Inheritance
+
+        val kahraman = Kahraman("superman","uçmak")
+        kahraman.kos()
+
+        val muhtesemKahraman = MuhtesemKahraman("batman","zengin olmak")
+        muhtesemKahraman.kos()
+        println(muhtesemKahraman.isim)
+        muhtesemKahraman.isim = "atıl"
+        muhtesemKahraman.muhtesemFonksiyon()
+
+        //Polymorphism
+
+        //statik polymorphism
+        val islemler = Islemler()
+        println(islemler.cikarma(10,2))
+        println(islemler.cikarma(10,2,3))
+        println(islemler.cikarma(10,2,3,2))
+
+        //dinamik polymorphism
+        val kedi = Hayvan()
+        val kopek = Kopek()
+        val ornekDizi = arrayOf(kedi, kopek)
+        ornekDizi.forEach {
+            it.sesCikar()
+        }
+
+        //Abstraction
+        //Abstract Class, Interface
+
+        //val insan = Insan()
 
 
 

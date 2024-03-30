@@ -1,6 +1,6 @@
 package com.atilsamancioglu.kotlinoop
 
-class Sanatci(var isim: String, val yas: Int, enstruman: String) {
+class Sanatci(var isim: String, val yas: Int, enstruman: String) : Insan(), Sarki, Dans {
 
     private var sacRengi = ""
     private var tur = "insan"
@@ -18,6 +18,7 @@ class Sanatci(var isim: String, val yas: Int, enstruman: String) {
         }
     }
 
+
     fun turuYazdir() {
         println(this.tur)
     }
@@ -30,6 +31,19 @@ class Sanatci(var isim: String, val yas: Int, enstruman: String) {
         println("init çağırıldı")
 
     }
+
+    override fun test() {
+        //bu abstract sınıftan gelen abstract fonksiyonun override edilmiş hali
+    }
+
+    override fun sarkiSoyleFonksiyonu() {
+
+    }
+
+    override fun dansEtmeFonksiyonu() {
+
+    }
+
 
 }
 
